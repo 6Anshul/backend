@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import CustomAPIError from '../errors/CustomAPIError.js';
 import BadRequestError from '../errors/BadRequestError.js';
-import { UNAUTHORIZED } from 'http-status-codes';
+import { StatusCodes } from 'http-status-codes';
 
 const auth =(req,res,next)=>{
     //console.log(req.header.authorization);
